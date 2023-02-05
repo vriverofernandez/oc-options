@@ -1,0 +1,47 @@
+api_endpoint: https://dev-ibp-ibp-console-console.console-openshift-console.apps.eticketfcb.westeurope.aroapp.io/
+api_authtype: basic
+api_key: devops
+api_secret: initPassword1_
+
+# Common
+
+# Ordering Org
+ordering_org_name: "Dev Ordering Org"
+ca_admin_enrollment_id: adminETicketing
+ca_admin_enrollment_secret: adminETicketingpw
+organization_admin_enrollment_id: orderingOrgAdminETicketing
+organization_admin_enrollment_secret: orderingOrgAdminETicketingpw
+ordering_service_enrollment_id: orderingOrgOrdererETicketing
+ordering_service_enrollment_secret: orderingOrgOrdererETicketingpw
+ordering_service_name: "Dev Ordering Service"
+ordering_service_msp: ETicketingOrdererMSP
+ordering_service_nodes: 1
+
+# Org1
+org_name: "Dev ETicketing Org"
+org_msp_id: DevETicketingOrgMSP
+org_ca_name: "Dev ETicketing Org CA"
+org_peer_name: "Dev ETicketing Org Peer"
+
+# Peer
+peer_enrollment_id: eticketingpeer
+peer_enrollment_secret: eticketingpeerpw
+application_enrollment_id: eticketingpeerapp
+application_enrollment_secret: eticketingpeerpw
+application_enrollment_type: client
+application_max_enrollments: 10
+
+# Channel
+channel_name: "eticket"
+
+# Chaincodes (Uncomment for installation for local env)
+# smart_contract_name: eticket-cc
+# smart_contract_version: 0.0.2
+# smart_contract_sequence: 3
+
+ca_version: ">=1.4,<2.0"
+peer_version: ">=2.2,<3.0"
+ordering_service_version: ">=2.2,<3.0"
+wait_timeout: 600
+
+
